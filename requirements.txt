@@ -18,3 +18,4 @@ numpy
 pycurl
 pyproj
 shapely
+rasterio==1.0a5
