@@ -10,3 +10,10 @@ geomet==0.1.1
 vcrpy
 ndg-httpsclient==0.4.2
 bumpversion
+ephem
+toolz
+dask
+cloudpickle
+numpy
+pycurl
+pyproj
