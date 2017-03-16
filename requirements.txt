@@ -18,4 +18,5 @@ numpy
 pycurl
 pyproj
 shapely
+boto3>=1.2.4
 rasterio==1.0a3
