@@ -1,7 +1,7 @@
 six==1.10.0
 future==0.15.2
 requests==2.12.1
-boto
+boto=2.49.0
 gbdx-auth==0.2.2
 pygeoif==0.6
 pytest==2.9.1
@@ -19,4 +19,3 @@ pycurl
 pyproj
 shapely
 boto3>=1.2.4
-rasterio==1.0a3
