@@ -89,9 +89,6 @@ class DaskImage(da.Array):
         super(DaskImage, self).__init__(**kwargs)
         self.nchips = math.ceil(float(self.shape[-1]) / 256.0) * math.ceil(float(self.shape[1]) / 256.0)
 
-    def author(self):
-        return 'danm'
-
     def read(self, bands=None):
         """ Reads data from a dask array and returns the computed ndarray matching the given bands """
         print('Fetching Image... {} {}'.format(self.nchips, 'tiles' if self.nchips > 1 else 'tile'))
@@ -150,6 +147,9 @@ class IpeImage(DaskImage):
         if bounds is not None: 
             _cfg = self._aoi_config(bounds)
             super(IpeImage, self).__init__(**_cfg)
+
+    def author(self):
+        return 'danm'
 
     @property
     def ipe(self):
