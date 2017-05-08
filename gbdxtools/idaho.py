@@ -204,7 +204,9 @@ class Idaho(object):
         # specify location information
         location_str = '&upperLeft={}&lowerRight={}'.format(t2s2((W, N)), t2s2((E, S)))
 
-        service_url = 'http://idaho.geobigdata.io/v1/chip/bbox/idaho-images/'
+        print('danm: in idaho.get_chip()')
+        service_url = 'http://localhost:8080/v1/chip/bbox/idaho-images/'
+        #service_url = 'http://idaho.geobigdata.io/v1/chip/bbox/idaho-images/'
         url = service_url + band_str + location_str
         url += '&format=' + chip_format + '&token=' + self.gbdx_connection.access_token
         r = requests.get(url)
@@ -242,7 +244,9 @@ class Idaho(object):
         '''
 
         description = self.describe_images(self.get_images_by_catid(catid))
-        service_url = 'http://idaho.geobigdata.io/v1/tile/'
+        print('danm: in idaho.get_tms_layers()')
+        service_url = 'http://localhost:8080/v1/tile/'
+        #service_url = 'http://idaho.geobigdata.io/v1/tile/'
 
         urls, bboxes = [], []
         for catid, images in description.items():

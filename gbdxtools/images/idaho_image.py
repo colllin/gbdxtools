@@ -27,7 +27,9 @@ class IdahoImage(IpeImage):
     @property
     def idaho_md(self):
         if self._idaho_md is None:
-            self._idaho_md = requests.get('http://idaho.timbr.io/{}.json'.format(self._gid)).json()
+            print('danm: in idaho_image.idaho_md()')
+            self._idaho_md = requests.get('http://localhost:8090/{}.json'.format(self._gid)).json()
+            #self._idaho_md = requests.get('http://idaho.timbr.io/{}.json'.format(self._gid)).json()
         return self._idaho_md
 
     def _init_graphs(self):

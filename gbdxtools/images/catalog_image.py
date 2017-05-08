@@ -144,7 +144,9 @@ class CatalogImage(IpeImage):
     def _mosaic(self, graph, suffix=''):
         mosaic = ipe.GeospatialMosaic(*graph.values())
         idaho_id = list(graph.keys())[0]
-        meta = requests.get('http://idaho.timbr.io/{}.json'.format(idaho_id)).json()
+        print('danm: in catalog_image._mosaic()')
+        meta = requests.get('http://localhost:8090/{}.json'.format(idaho_id)).json()
+        #meta = requests.get('http://idaho.timbr.io/{}.json'.format(idaho_id)).json()
         gains_offsets = calc_toa_gain_offset(meta['properties'])
         radiance_scales, reflectance_scales, radiance_offsets = zip(*gains_offsets)
         radiance = ipe.AddConst(ipe.MultiplyConst(ipe.Format(mosaic, dataType="4"), constants=radiance_scales), constants=radiance_offsets)
