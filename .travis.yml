@@ -1,6 +1,6 @@
 language: python
+dist: trusty
 sudo: required
-group: deprecated-2017Q1
 python:
   - "2.7"
   - "3.3"
