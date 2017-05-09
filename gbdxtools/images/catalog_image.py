@@ -38,6 +38,7 @@ class CatalogImage(IpeImage):
     _properties = None
 
     def __init__(self, cat_id, band_type="MS", node="toa_reflectance", **kwargs):
+        self.author = 'danm'
         self.interface = Auth()
         self.vectors = Vectors()
         self._gid = cat_id
@@ -57,11 +58,6 @@ class CatalogImage(IpeImage):
             self._ipe_graphs = self._init_graphs()
 
         super(CatalogImage, self).__init__(self._ipe_graphs, cat_id, node=self._node_id, **kwargs)
-
-
-    @property
-    def author(self):
-        return 'danm'
 
     def _query_vectors(self, query, aoi=None):
         if aoi is None:
