@@ -59,6 +59,7 @@ class CatalogImage(IpeImage):
         super(CatalogImage, self).__init__(self._ipe_graphs, cat_id, node=self._node_id, **kwargs)
 
 
+    @property
     def author(self):
         return 'danm'
 
