@@ -59,6 +59,9 @@ class CatalogImage(IpeImage):
         super(CatalogImage, self).__init__(self._ipe_graphs, cat_id, node=self._node_id, **kwargs)
 
 
+    def author(self):
+        return 'danm'
+
     def _query_vectors(self, query, aoi=None):
         if aoi is None:
             aoi = "POLYGON((-180.0 90.0,180.0 90.0,180.0 -90.0,-180.0 -90.0,-180.0 90.0))"
