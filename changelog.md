@@ -1,3 +1,35 @@
+0.11.11
+-------
+* more verbose error when idaho cannot download chip
+
+0.11.10
+-------
+* Minor patch to use new serverside IPE ids
+
+0.11.9
+------
+* Fix signals exception handling for Windows OS.
+
+0.11.8
+------
+* add LandsatImage class
+
+0.11.7
+------
+* pin version of dask====0.13.0
+
+0.11.6
+------
+* Add optional index parameter to vector aggregations
+
+0.11.5
+------
+* Add in vector aggregation support (see examples/vectors_aggregation.py)
+
+0.11.4
+------
+* Default vector service classes to use catalog indexes instead of the searching through all documents
+
 0.11.3
 ------
 * Adds CatalogImage and IdahoImage classes 
