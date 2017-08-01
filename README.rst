@@ -43,6 +43,8 @@ Installation
 
 The easiest way to install gbdxtools is with conda.  If you haven't installed conda, go here and download the appropriate installer for your operating system:  https://conda.io/miniconda.html
 
+On windows, make sure to check the box labeled "Add Anaconda to my PATH environment variable".
+
 **Mac or Linux installation**::
 
     # create a fresh conda environment:
