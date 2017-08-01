@@ -41,15 +41,32 @@ There have been reports of authentication errors while creating a gbdx interface
 Installation
 ------------
 
-To install the latest stable version on pypi::
+The easiest way to install gbdxtools is with conda.  If you haven't installed conda, go here and download the appropriate installer for your operating system:  https://conda.io/miniconda.html
 
-    pip install gbdxtools
+**Mac or Linux installation**::
 
-Optional: you can install the current version of the master branch with::
+    # create a fresh conda environment:
+    conda create --name gbdx-env
+    source activate gbdx-env
+    
+    # install gbdxtools
+    conda install -c timbr-io -c conda-forge gbdxtools
+    
+    # sometimes you must deactivate and reactivate the env
+    conda deactivate gbdx-env
+    conda activate gbdx-env
+    
+**Windows Installation**
 
-    pip install git+https://github.com/digitalglobe/gbdxtools
+Open powershell and::
 
-Keep in mind that the master branch is constantly under development. 
+    # create a fresh conda environment:
+    conda create --name gbdx-env
+    activate gbdx-env
+    
+    # install gbdxtools
+    conda install -c timbr-io -c conda-forge shapely
+    conda install -c timbr-io -c conda-forge gbdxtools
 
 Troubleshooting
 ~~~~~~~~~~~~~~~
