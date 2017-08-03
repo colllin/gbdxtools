@@ -52,7 +52,7 @@ On windows, make sure to check the box labeled "Add Anaconda to my PATH environm
     source activate gbdx-env
     
     # install gbdxtools
-    conda install -c timbr-io -c conda-forge gbdxtools
+    conda install -c digitalglobe -c conda-forge gbdxtools
     
     # sometimes you must deactivate and reactivate the env
     conda deactivate gbdx-env
@@ -67,8 +67,7 @@ Open powershell and::
     activate gbdx-env
     
     # install gbdxtools
-    conda install -c timbr-io -c conda-forge shapely
-    conda install -c timbr-io -c conda-forge gbdxtools
+    conda install -c digitalglobe -c conda-forge gbdxtools
 
 Troubleshooting
 ~~~~~~~~~~~~~~~
