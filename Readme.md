@@ -1,12 +1,12 @@
 # gbdxtools: Python tools for using GBDX
 
-gbdxtools is a package for ordering imagery and launching workflows on DigitalGlobe's GBDX platform.
-
 [![AnacondaCloud](https://anaconda.org/digitalglobe/gbdxtools/badges/version.svg)](https://anaconda.org/digitalglobe/gbdxtools)
 [![pypi package](https://badge.fury.io/py/gbdxtools.svg)](https://badge.fury.io/py/gbdxtools)
 [![build status](https://travis-ci.org/DigitalGlobe/gbdxtools.svg?branch=master)](https://travis-ci.org/DigitalGlobe/gbdxtools)
 [![Documentation Status](https://readthedocs.org/projects/gbdxtools/badge/?version=latest)](http://gbdxtools.readthedocs.org/en/latest/?badge=latest)
 [![codecov](https://codecov.io/gh/DigitalGlobe/gbdxtools/branch/master/graph/badge.svg)](https://codecov.io/gh/DigitalGlobe/gbdxtools)
+
+**gbdxtools is a package for ordering imagery and launching workflows on DigitalGlobe's GBDX platform.**
 
 Supported Python versions: `2.7`, `3.3`, `3.4`, `3.5`
 
